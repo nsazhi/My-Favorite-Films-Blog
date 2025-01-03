@@ -14,12 +14,20 @@ def main_page(request):
     return render(request, 'main.html', {'categories': categories})
 
 
-def get_all_films(request):
+def get_films(request):
     """
-    Получение всех фильмов
+    Получение всех фильмов или списка фильмов по категории при параметре запроса
     """
-    films = Film.objects.all().order_by('-created_at')
-    return render(request, 'films.html', {'films': films})
+    slug = request.GET.get('slug')
+    if slug:
+        category = Category.objects.get(slug=slug)
+        films = category.film_set.all()
+        return render(request,
+                      'films_by_category.html',
+                      {'category': category, 'films': films})
+    else:
+        films = Film.objects.all().order_by('-created_at')
+        return render(request, 'films.html', {'films': films})
 
 
 def get_films_by_category(request, category_slug):

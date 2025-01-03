@@ -22,6 +22,6 @@ from catalog.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_page),
-    path('films/', get_all_films, name='films'),
+    path('films/', get_films, name='films'),
     path('films/<str:category_slug>', get_films_by_category, name='films_by_category'),
 ]
