@@ -3,18 +3,18 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField(max_length=50, unique=True)
-    slug = models.CharField(max_length=50, unique=True)
+    slug = models.SlugField(name)
 
     def __str__(self):
         return self.name
 
 
 class Film(models.Model):
-    title = models.CharField(max_length=100)
-    slug = models.CharField(max_length=100)
-    release = models.IntegerField()
-    country = models.CharField(max_length=100)
-    genre = models.CharField(max_length=100)
+    title = models.CharField(max_length=100, unique=True)
+    slug = models.SlugField(title)
+    release = models.IntegerField(null=False)
+    country = models.CharField(max_length=100, null=False)
+    genre = models.CharField(max_length=100, null=False)
     director = models.CharField(max_length=100)
     actors = models.CharField(max_length=200)
     description = models.CharField(max_length=300)
