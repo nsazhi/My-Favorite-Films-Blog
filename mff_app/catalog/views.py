@@ -1,9 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from django.http import HttpResponse
-from django.views import View
-from django.core.paginator import Paginator
-from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from django.shortcuts import render
 from .models import *
 
 def main_page(request):
@@ -11,7 +6,7 @@ def main_page(request):
     Главная страница: список категорий
     """
     categories = Category.objects.all()
-    return render(request, 'main.html', {'categories': categories})
+    return render(request, 'catalog/main.html', {'categories': categories})
 
 
 def get_films(request):
@@ -23,11 +18,11 @@ def get_films(request):
         category = Category.objects.get(slug=slug)
         films = category.film_set.all()
         return render(request,
-                      'films_by_category.html',
+                      'catalog/films_by_category.html',
                       {'category': category, 'films': films})
     else:
         films = Film.objects.all().order_by('-created_at')
-        return render(request, 'films.html', {'films': films})
+        return render(request, 'catalog/films.html', {'films': films})
 
 
 def get_films_by_category(request, category_slug):
@@ -37,5 +32,5 @@ def get_films_by_category(request, category_slug):
     category = Category.objects.get(slug=category_slug)
     films = category.film_set.all()
     return render(request,
-                  'films_by_category.html',
+                  'catalog/films_by_category.html',
                   {'category': category, 'films': films})
