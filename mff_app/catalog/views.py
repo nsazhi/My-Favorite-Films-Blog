@@ -30,7 +30,7 @@ def get_films(request):
     **Context**
 
     ``category``
-        Категория с фильтром по Category.slug.\n
+        Категория с Category.slug == slug.\n
         Пример :model: catalog.Category.
 
     ``films``
@@ -74,7 +74,7 @@ def get_films_by_category(request, category_slug):
     **Context**
 
     ``category``
-        Категория с фильтром по Category.slug.\n
+        Категория с Category.slug == category_slug.\n
         Пример :model: catalog.Category.
 
     ``films``
