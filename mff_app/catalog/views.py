@@ -30,9 +30,11 @@ def get_films(request):
     **Context**
 
     ``category``
+        Категория с фильтром по Category.slug.\n
         Пример :model: catalog.Category.
 
     ``films``
+        Список объектов с фильтром по Film.category_id.\n
         Пример [:model:`catalog.Film`, :model:`catalog.Film`].
 
     **Template:**
@@ -44,11 +46,12 @@ def get_films(request):
     **Context**
 
     ``films``
+        Список всех фильмов.\n
         Пример [:model:`catalog.Film`, :model:`catalog.Film`].
 
     **Template:**
 
-    :template:`catalog/films.html`,
+    :template:`catalog/films.html`
     """
     slug = request.GET.get('slug')
     if slug:
@@ -66,11 +69,12 @@ def get_films_by_category(request, category_slug):
     """
     Отображает список фильмов по категориям
 
-    :filter:`category_slug`
+    :param request:`category_slug`
 
     **Context**
 
     ``category``
+        Категория с фильтром по Category.slug.\n
         Пример :model: catalog.Category.
 
     ``films``
