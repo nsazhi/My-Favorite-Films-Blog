@@ -4,12 +4,18 @@ from .models import *
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    Класс категории для добавления с панели администратора
+    """
     list_display = ('name',)
     prepopulated_fields = {'slug': ('name',)}
 
 
 @admin.register(Film)
 class FilmAdmin(admin.ModelAdmin):
+    """
+    Класс фильма для добавления с панели администратора
+    """
     list_display = ('title', 'category', 'country')
     search_fields = ('title', 'country')
     list_filter = ('category', 'genre')

@@ -1,9 +1,19 @@
 from django.shortcuts import render
 from .models import *
 
+
 def main_page(request):
     """
-    Главная страница: список категорий
+    Главная страница: Отображает список всех категорий
+
+    **Context**
+
+    ``categories``
+        Пример [:model:`catalog.Category`, :model:`catalog.Category`].
+
+    **Template:**
+
+    :template:`catalog/main.html`
     """
     categories = Category.objects.all()
     return render(request, 'catalog/main.html', {'categories': categories})
@@ -11,7 +21,34 @@ def main_page(request):
 
 def get_films(request):
     """
-    Получение всех фильмов или списка фильмов по категории при параметре запроса
+    Отображает весь список фильмов или по категориям
+
+    **Если есть параметр запроса:**
+
+    :param request: `slug`
+
+    **Context**
+
+    ``category``
+        Пример :model: catalog.Category.
+
+    ``films``
+        Пример [:model:`catalog.Film`, :model:`catalog.Film`].
+
+    **Template:**
+
+    :template:`catalog/films_by_category.html`
+
+    **Если нет параметра запроса:**
+
+    **Context**
+
+    ``films``
+        Пример [:model:`catalog.Film`, :model:`catalog.Film`].
+
+    **Template:**
+
+    :template:`catalog/films.html`,
     """
     slug = request.GET.get('slug')
     if slug:
@@ -27,7 +64,21 @@ def get_films(request):
 
 def get_films_by_category(request, category_slug):
     """
-    Получение списка фильмов по категории
+    Отображает список фильмов по категориям
+
+    :filter:`category_slug`
+
+    **Context**
+
+    ``category``
+        Пример :model: catalog.Category.
+
+    ``films``
+        Пример [:model:`catalog.Film`, :model:`catalog.Film`].
+
+    **Template:**
+
+    :template:`catalog/films_by_category.html`
     """
     category = Category.objects.get(slug=category_slug)
     films = category.film_set.all()
