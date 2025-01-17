@@ -104,13 +104,13 @@ films_by_category.html — страница каталога фильмов с �
 
 `newvenv\Scripts\activate`
 
-Клонируйте [проект](https://github.com/nsazhi/Blog-My-Favorite-Films-Django/tree/master)
+Клонируйте [проект](https://github.com/nsazhi/Blog-My-Favorite-Films-Django/tree/master).
 
 Установите модули из файла requirements.txt:
 
 `pip install -r requirements.txt`
 
-В пакет mff_app/mff_app добавьте файл local_settings.py:
+В пакет ***mff_app/mff_app*** добавьте файл ***local_settings.py***:
 
 ```
 cd mff_app/mff_app
@@ -132,6 +132,14 @@ DATABASES = {
 }
 ```
 
-В файл `mff_app/mff_app/settings.py` добавьте:
+В файл ***mff_app/mff_app/settings.py*** добавьте:
 
 `from .local_settings import *`
+
+Запустите приложение:
+
+```
+cd ..
+
+python manage.py runserver
+```
