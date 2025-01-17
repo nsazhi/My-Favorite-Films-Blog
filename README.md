@@ -34,13 +34,13 @@
 
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog2.jpg">
 
-Рис. 3. Страница каталога с отбором по категории при переходе с домашней страницы.
+Рис. 3. Страница каталога с отбором по категории при переходе с домашней страницы
 
 #
 
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog3.jpg">
 
-Рис. 4. Страница каталога с отбором по категории из фильтра.
+Рис. 4. Страница каталога с отбором по категории из фильтра
 
 #
 
@@ -72,3 +72,18 @@
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog4.jpg">
 
 Рис. 8. Добавленный фильм с изображением по умолчанию
+
+## СУБД (Database Management System)
+
+Данный проект требует подключения СУБД для хранения данных. Он позволяет подключить любую СУБД. Так как в перспективе возможно значительное увеличение объема данных, использовалась клиент-серверная реляционная СУБД PostgreSQL.
+
+<img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/dms_cat_dj.jpg">
+
+Рис. 9. Таблица категорий в базе данных
+
+#
+
+<img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/dms_fil_dj.jpg">
+
+Рис. 9. Таблица фильмов в базе данных
+
