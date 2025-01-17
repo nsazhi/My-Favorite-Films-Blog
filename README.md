@@ -100,8 +100,34 @@ films_by_category.html — страница каталога фильмов с �
 
 `python -m venv newvenv`
 
-Активируйте его
+Активируйте его:
 
 `newvenv\Scripts\activate`
 
-Установите необходимые модули из файла [requirements.txt](https://github.com/nsazhi/Blog-My-Favorite-Films-Django/blob/master/requirements.txt)
+Клонируйте [проект](https://github.com/nsazhi/Blog-My-Favorite-Films-Django/tree/master)
+
+Установите модули из файла requirements.txt:
+
+`pip install -r requirements.txt`
+
+В пакет `mff_app/mff_app` добавьте файл `local_settings.py`:
+
+`cd mff_app/mff_app`
+
+`cd . > local_settings.py`
+
+Добавьте в него ваши конфиденциальные данные:
+
+`SECRET_KEY = 'ваш секретный ключ'
+
+DEBUG = False
+
+DATABASES = {
+    'default': {
+        * ваши данные подключения к базе данных * 
+    }
+}`
+
+В файл `mff_app/mff_app/settings.py` добавьте:
+
+`from .local_settings import *`
