@@ -108,7 +108,7 @@ films_by_category.html — страница каталога фильмов с �
 
 `newvenv\Scripts\activate`
 
-Клонируйте [проект](https://github.com/nsazhi/Blog-My-Favorite-Films-Django/tree/master).
+Клонируйте [проект](https://github.com/nsazhi/Blog-My-Favorite-Films-Django/tree/master):
 
 `git clone https://github.com/nsazhi/Blog-My-Favorite-Films-Django.git` 
 
@@ -133,7 +133,7 @@ DEBUG = False
 
 DATABASES = {
     'default': {
-        * ваши данные подключения к базе данных * 
+        * ваши переменные подключения к базе данных * 
     }
 }
 ```
