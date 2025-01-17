@@ -16,7 +16,7 @@
 
 ### Домашняя страница
 Здесь отображается список всех категорий, имеющихся в базе данных. Каждый пункт — это ссылка на страницу каталога фильмов,содержащая slug категории в динамическом URL для фильтрации.
-Также есть меню со ссылками на домашнюю страницу и полный каталог.
+Также есть меню со ссылками на домашнюю страницу и полный каталог и футер, общие для всех страниц сайта.
 
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/main_page.jpg">
 
@@ -29,12 +29,12 @@
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog.jpg">
 
 Рис. 2. Страница полного каталога
-<br><br>
+<p></p>
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog2.jpg">
 
-Рис. 3. Страница каталога с фильтром по категории при переходе с домашней страницы.
-<br><br>
+Рис. 3. Страница каталога с отбором по категории при переходе с домашней страницы.
+<p></p>
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog3.jpg">
 
-Рис. 3. Страница каталога с фильтром по категории при переходе с домашней страницы.
+Рис. 4. Страница каталога с отбором по категории из фильтра.
 
