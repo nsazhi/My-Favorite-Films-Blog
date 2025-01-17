@@ -30,7 +30,7 @@
 
 Рис. 2. Страница полного каталога
 
----
+#
 
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog2.jpg">
 
