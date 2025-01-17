@@ -119,7 +119,7 @@ films_by_category.html — страница каталога фильмов с �
 В пакет ***mff_app/mff_app*** добавьте файл ***local_settings.py***:
 
 ```
-cd mff_app/mff_app
+cd Blog-My-Favorite-Films-Django/mff_app/mff_app
 
 cd . > local_settings.py
 ```
@@ -137,10 +137,6 @@ DATABASES = {
     }
 }
 ```
-
-В файл ***mff_app/mff_app/settings.py*** добавьте:
-
-`from .local_settings import *`
 
 Запустите приложение:
 
