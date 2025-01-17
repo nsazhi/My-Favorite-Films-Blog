@@ -110,7 +110,7 @@ films_by_category.html — страница каталога фильмов с �
 
 `pip install -r requirements.txt`
 
-В пакет mff_app/mff_app добавьте файл local_settings.py:
+Перейдите в пакет mff_app/mff_app добавьте файл local_settings.py:
 
 ```cd mff_app/mff_app
 
