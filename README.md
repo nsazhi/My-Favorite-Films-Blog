@@ -112,6 +112,10 @@ films_by_category.html — страница каталога фильмов с �
 
 `git clone https://github.com/nsazhi/Blog-My-Favorite-Films-Django.git` 
 
+Перейдите в папку клоникрованного проекта:
+
+`cd Blog-My-Favorite-Films-Django`
+
 Установите модули из файла requirements.txt:
 
 `pip install -r requirements.txt`
@@ -119,7 +123,7 @@ films_by_category.html — страница каталога фильмов с �
 В пакет ***mff_app/mff_app*** добавьте файл ***local_settings.py***:
 
 ```
-cd Blog-My-Favorite-Films-Django/mff_app/mff_app
+cd mff_app/mff_app
 
 cd . > local_settings.py
 ```
