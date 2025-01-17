@@ -110,15 +110,15 @@ films_by_category.html — страница каталога фильмов с �
 
 `pip install -r requirements.txt`
 
-В пакет `mff_app/mff_app` добавьте файл `local_settings.py`:
+В пакет mff_app/mff_app добавьте файл local_settings.py:
 
-`cd mff_app/mff_app`
+```cd mff_app/mff_app
 
-`cd . > local_settings.py`
+cd . > local_settings.py```
 
 Добавьте в него ваши конфиденциальные данные:
 
-`SECRET_KEY = 'ваш секретный ключ'
+```SECRET_KEY = 'ваш секретный ключ'
 
 DEBUG = False
 
@@ -130,4 +130,4 @@ DATABASES = {
 
 В файл `mff_app/mff_app/settings.py` добавьте:
 
-`from .local_settings import *`
+`from .local_settings import *```
