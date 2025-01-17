@@ -104,4 +104,4 @@ films_by_category.html — страница каталога фильмов с �
 
 `newvenv\Scripts\activate`
 
-Установите необходимые модули из файла [requirements.txt]("https://github.com/nsazhi/Blog-My-Favorite-Films-Django/blob/master/requirements.txt")
+Установите необходимые модули из файла [requirements.txt](https://github.com/nsazhi/Blog-My-Favorite-Films-Django/blob/master/requirements.txt)
