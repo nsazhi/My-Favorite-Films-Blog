@@ -36,7 +36,39 @@
 
 Рис. 3. Страница каталога с отбором по категории при переходе с домашней страницы.
 
+#
+
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog3.jpg">
 
 Рис. 4. Страница каталога с отбором по категории из фильтра.
 
+#
+
+### Панель администратора
+Немаловажным для удобства внесения записей в базу данных является наличие панели администратора. Django предоставляет возможность автоматической генерации страниц администрирования с авторизацией и панелью, где можно добавить записи в базу данных, а также искать, сортировать и фильтровать уже имеющиеся данные.
+
+<img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/adm_log_dj.jpg">
+
+Рис. 5. Авторизация админстратора
+
+#
+
+Для заполнения поля `slug` добавлена функция автоматического заполнения по введенному названию. 
+
+<img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/adm_categ_dj.jpg">
+
+Рис. 6. Добавление категории
+
+#
+
+Поле `img_url`, на случай отсутствия ссылки, автоматически заполняется, загружая предустановленное изображение.
+
+<img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/adm_film_dj.jpg">
+
+Рис. 7. Добавление фильма
+
+#
+
+<img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog4.jpg">
+
+Рис. 8. Добавленный фильм с изображением по умолчанию
