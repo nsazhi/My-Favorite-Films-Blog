@@ -29,11 +29,13 @@
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog.jpg">
 
 Рис. 2. Страница полного каталога
-<p></p>
+
+---
+
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog2.jpg">
 
 Рис. 3. Страница каталога с отбором по категории при переходе с домашней страницы.
-<p></p>
+
 <img src="https://github.com/nsazhi/My-Favorite-Films-Blog/blob/master/screenshorts/catalog3.jpg">
 
 Рис. 4. Страница каталога с отбором по категории из фильтра.
