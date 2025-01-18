@@ -133,8 +133,6 @@ cd . > local_settings.py
 ```
 SECRET_KEY = 'ваш секретный ключ'
 
-DEBUG = False
-
 DATABASES = {
     'default': {
         * ваши переменные подключения к базе данных * 
