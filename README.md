@@ -106,6 +106,9 @@ films_by_category.html — страница каталога фильмов с �
 <img src="https://github.com/nsazhi/thesis_django_app/blob/master/screenshorts/struc_dj.jpg">
 
 ## Установка проекта
+**ВАЖНО!** Данная установка предназначена для работы с проектом на локальном сервере. 
+Версия Python 3.9 и выше.
+
 Создайте виртуальное окружение:
 
 `python -m venv newvenv`
@@ -114,7 +117,7 @@ films_by_category.html — страница каталога фильмов с �
 
 `newvenv\Scripts\activate`
 
-Клонируйте [проект](https://github.com/nsazhi/Blog-My-Favorite-Films-Django/tree/master):
+Клонируйте [проект](https://github.com/nsazhi/Blog-My-Favorite-Films-Django):
 
 `git clone https://github.com/nsazhi/Blog-My-Favorite-Films-Django.git` 
 
